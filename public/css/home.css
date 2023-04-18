@@ -1,0 +1,218 @@
+body {
+    margin: 0px;
+    border: 0px;
+}
+
+.container {
+    border: solid 1px red;
+    text-align: center;
+}
+
+/*div holding the navigation*/
+.navigation {
+    position: relative;
+    border: solid 1px green;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+}
+
+/*logo*/
+.logo {
+    margin: 0px;
+    width: 100px;
+    height: 90px;
+    text-align: center;
+    float: left;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-top: 15px;
+    width: max;
+    height: 52px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+li {
+
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 100px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0F1221;
+}
+
+.contactt {
+    margin: 0px;
+    width: 170.67px;
+    background: #5E3BEE;
+    border-radius: 5.33333px;
+    font-size: 20px;
+    color: white;
+    border: solid 1px #5E3BEE;
+    color: #5E3BEE;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 15px;
+}
+
+.contactt:hover {
+    background-color: #5E3BEE;
+    color: white;
+    cursor: pointer;
+}
+
+/*header section*/
+.header {
+    border: solid 1px green;
+    background: #F5FCFF;
+    width: 100%;
+    height: 996.41px;
+    position: relative;
+}
+
+/*left section of the header*/
+.left {
+    border: solid 1px red;
+    width: 790.67px;
+    height: 526.67px;
+    margin: 0;
+    margin-left: 30px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+/*text inside the left header*/
+.hi {
+    width: 141px;
+    height: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.3333px;
+}
+
+
+.content1 {
+    width: 790.67px;
+    height: 150px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50.6667px;
+    margin: 0px;
+}
+
+.content2 {
+    margin: 0px;
+    width: 750.33px;
+    height: 73.33px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*get in touch button*/
+.getInTouch {
+    padding: 15px;
+    background: #5E3BEE;
+    border-radius: 5.33333px;
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+    border: solid 1px #5E3BEE;
+}
+
+.getInTouch:hover {
+    cursor: pointer;
+    color: #5E3BEE;
+    background-color: white;
+}
+
+.content1 label {
+    color: #5E3BEE;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*right side*/
+.right {
+    border: solid 1px green;
+    width: 917.33px;
+    height: 729.74px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(-50%);
+    right: 20px;
+
+}
+
+.pic1 {
+    width: 100px;
+    height: 100px;
+}
+
+/* ------ WHAT I DO SECTION----------------------------*/
+.SK2 {
+    border: Solid 1px;
+}
+
+.showcase {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.card {
+    min-width: 200px;
+    margin: 20px;
+    text-align: left;
+}
+
+.material-symbols-outlined{
+    font-size: 100px;
+    color: green;
+    border: solid 1px
+}
