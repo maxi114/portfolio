@@ -1,17 +1,19 @@
 body {
+    padding: 0px;
     margin: 0px;
-    border: 0px;
+    border: solid 1px green;
 }
 
-.container {
-    border: solid 1px red;
+.container2 {
     text-align: center;
+    max-width: 1500px;
+    margin: auto;
+    border: solid 1px
 }
 
 /*div holding the navigation*/
 .navigation {
     position: relative;
-    border: solid 1px green;
     text-align: center;
     height: 90px;
     width: 100%;
@@ -100,7 +102,6 @@ li a {
 
 /*header section*/
 .header {
-    border: solid 1px green;
     background: #F5FCFF;
     width: 100%;
     height: 996.41px;
@@ -109,7 +110,6 @@ li a {
 
 /*left section of the header*/
 .left {
-    border: solid 1px red;
     width: 790.67px;
     height: 526.67px;
     margin: 0;
@@ -178,7 +178,6 @@ li a {
 
 /*right side*/
 .right {
-    border: solid 1px green;
     width: 917.33px;
     height: 729.74px;
     position: absolute;
@@ -195,8 +194,17 @@ li a {
 }
 
 /* ------ WHAT I DO SECTION----------------------------*/
-.SK2 {
-    border: Solid 1px;
+.skills {
+    padding-top: 50px;
+}
+
+.sk2 {
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 100px;
 }
 
 .showcase {
@@ -205,14 +213,107 @@ li a {
     justify-content: center;
 }
 
-.card {
-    min-width: 200px;
-    margin: 20px;
+
+
+#webdev {
+    border: none;
+    margin: 10px;
+    text-align: left;
+    background: #F5FCFF;
+    border-bottom: 4px solid #5E3BEE;
+    border-radius: 10.6667px;
+}
+
+
+#devt {
+    font-size: 30px;
+    color: green;
+    width: max-content;
+    padding: 5px;
+    margin: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10.6667px;
+}
+
+#apico {
+    font-size: 20px;
+    color: green;
+    width: max-content;
+    padding: 5px;
+    margin: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10.6667px;
+}
+
+.card-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.card-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/*------------about e=e section-------------------*/
+.about {
+    margin-top: 50px;
+    background-color: #F5FCFF;
+border-radius: 10.6667px;;
+}
+
+.abtme {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 50px;
+}
+
+.txtabt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
     text-align: left;
 }
 
-.material-symbols-outlined{
-    font-size: 100px;
-    color: green;
-    border: solid 1px
+
+
+/*-------------contact me secion--------------*/
+.contact{
+    padding: 30px;
+padding-top: 100px;
+
+}
+
+.gtin {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.3333px;
+}
+
+.ctme {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.lt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.ccrmform {
+    text-align: left;
 }
