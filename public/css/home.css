@@ -6,8 +6,6 @@ body {
 
 .container2 {
     text-align: center;
-    max-width: 1500px;
-    margin: auto;
     border: solid 1px
 }
 
@@ -101,11 +99,16 @@ li a {
 }
 
 /*header section*/
-.header {
+.header1 {
     background: #F5FCFF;
     width: 100%;
     height: 996.41px;
     position: relative;
+}
+
+.header {
+    max-width: 1500px;
+    margin: auto;
 }
 
 /*left section of the header*/
@@ -196,6 +199,8 @@ li a {
 /* ------ WHAT I DO SECTION----------------------------*/
 .skills {
     padding-top: 50px;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .sk2 {
@@ -262,10 +267,16 @@ li a {
 }
 
 /*------------about e=e section-------------------*/
-.about {
+.about1 {
     margin-top: 50px;
     background-color: #F5FCFF;
-border-radius: 10.6667px;;
+    border-radius: 10.6667px;
+    ;
+}
+
+.about {
+    max-width: 1500px;
+    margin: auto;
 }
 
 .abtme {
@@ -286,10 +297,12 @@ border-radius: 10.6667px;;
 
 
 
-/*-------------contact me secion--------------*/
-.contact{
+/*-------------contact me section--------------*/
+.contact {
     padding: 30px;
-padding-top: 100px;
+    padding-top: 100px;
+    max-width: 1000px;
+    margin: auto;
 
 }
 
@@ -316,4 +329,40 @@ padding-top: 100px;
 
 .ccrmform {
     text-align: left;
+}
+
+#Fname{
+    border-color:  #5E3BEE
+}
+
+#Lname{
+    border-color: #5E3BEE
+}
+
+#message{
+    border-color: #5E3BEE;
+    height: 200px;
+} 
+
+#sbtn{
+    background-color: #5E3BEE;
+    color: white;
+}
+
+#sbtn:hover{
+    color: #5E3BEE;
+    background-color: white;
+    border-color: #5E3BEE;
+}
+
+footer{
+    background-color: #F5FCFF;
+    margin: 0px;
+    border: solid 1px;
+    height: 200px;
+}
+
+.footer{
+    max-width: 1000px;
+    margin: auto;
 }
