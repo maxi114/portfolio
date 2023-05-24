@@ -5,6 +5,7 @@ body {
 
 .container2 {
     text-align: center;
+    
 }
 
 /*div holding the navigation*/
@@ -98,6 +99,7 @@ li a:hover{
     position: absolute;
     top: 15px;
     right: 20px;
+    text-decoration: none;
 }
 
 .contactt:hover {
@@ -170,6 +172,7 @@ li a:hover{
     color: white;
     margin-top: 50px;
     border: solid 1px #5E3BEE;
+    text-decoration: none;
 }
 
 .getInTouch:hover {
@@ -427,4 +430,9 @@ a img{
     width: 30px;
     height: 30px;
     border-radius: 5px;
+}
+
+/*for errors*/
+.error{
+    color: red;
 }

@@ -14,7 +14,9 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="./js/home.js"></script>
 </head>
 
 <body>
@@ -35,12 +37,12 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">Portfolio</a></li>
-                <li><a href="#contact">About me</a></li>
-                <li><a href="#about">Testimonials</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="">Testimonials</a></li>
             </ul>
 
             <!--contact me button-->
-            <button class="contactt">Contact me</button>
+            <a href="#contact" class="contactt">Contact me</a>
         </div>
 
         <!--header section-->
@@ -54,7 +56,7 @@
                     <!--content-->
                     <div class="content">
 
-                        <p class="hi">Hey, I am Max</p>
+                        <p class="hi">Hey, I'm Max</p>
                         <h1 class="content1">I revamp <label>realtors'</label> online presence through expert web
                             development.
                         </h1>
@@ -63,8 +65,9 @@
                             a
                             strong and visually appealing online platform is crucial for any real estate business. </p>
 
+                        <br><br>
                         <!--link-->
-                        <button class="getInTouch">Get In Touch</button>
+                        <a href = "#contact" class="getInTouch">Get In Touch</a>
 
                     </div>
 
@@ -141,7 +144,7 @@
 
 
         <!---About me sections-->
-        <div class="about1">
+        <div id="about" class="about1">
             <br><br><br>
             <div class="about">
                 <!--left side-->
@@ -170,30 +173,32 @@
         </div>
 
         <!--contact me section-->
-        <div class="contact">
+        <div id = "contact" class="contact">
 
             <p class="gtin">Get In Touch</p>
             <h1 class="ctme">Contact Me</h1>
             <p class="lt">let's take your online presence to the next level.</p>
 
+            <p class = "error"></p>
             <!--form-->
             <form class="row g-3 ccrmform">
                 <div class="col-md-6">
-                    <label for="Fname" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="Fname">
+                    <label for="Fname" class="form-label" >Name</label>
+                    <input type="text" class="form-control" id="Fname" ng-model = "vm.contact.name">
                 </div>
                 <div class="col-md-6">
-                    <label for="Lname" class="form-label">Email address</label>
-                    <input type="text" class="form-control" id="Lname">
+                    <label for="Lname" class="form-label"  >Email address</label>
+                    <input type="text" class="form-control" id="Lname" ng-model = "vm.contact.email">
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Type your message.."></textarea>
+                    <label for="message" class="form-label"  >Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Type your message.." ng-model = "vm.contact.message"></textarea>
                 </div>
 
         </div>
-        <div class="col-12">
-            <button type="submit" class="btn " id="sbtn">Submit</button>
+        <div class="col-12" id = "btn3">
+            <button type="submit" class="btn " id="sbtn">Message</button>
+            <i class="fa fa-circle-o-notch fa-spin" id="spin3"></i>
         </div>
         </form>
 
