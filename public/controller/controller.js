@@ -58,7 +58,7 @@
             $(".error").html("")
 
             //hide the message btn
-            //$(".btn").hide()
+            $(".btn").hide()
 
             //show the loading circle
             $("#spin3").show()
@@ -66,7 +66,35 @@
             //post the info to the server
             $http.post("/api/email", vm.contact)
             .then((res)=>{
-                console.log(res.data)
+
+                //if the email is sent
+                if(res.data == "sent"){
+
+                    //hide the loading circle
+                    $("#spin3").hide()
+
+                    //change the message btn to sent
+                    $(".btn").html("Sent")
+
+                    //change the background and text color
+                    $(".btn").css({"background-color": "green", "color": "white"})
+
+                    //show the button
+                    $(".btn").show()
+                }
+
+                //when an error occurs
+                if(res.data = "An error occured!"){
+                    $(".btn").html("Sent")
+                    //change the background and text color
+                    $(".btn").css({"background-color": "red", "color": "white"})
+                    //show the button
+                    $(".btn").show()
+                }
+
+                setTimeout(() => {
+                    location.href = "/"
+                }, 1500)
             })
 
         })
