@@ -26,7 +26,7 @@
         $(".error").html("")
 
         //when user clicks Message
-        $(".btn").on("click",()=>{
+        $("#sbtn").on("click",()=>{
 
             //validate user inpt
 
